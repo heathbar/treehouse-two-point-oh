@@ -1,0 +1,30 @@
+{
+    "name": "treehouse-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node dist/index.js",
+        "compile": "gulp",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.15.4",
+        "http": "0.0.0",
+        "path": "^0.12.7",
+        "socket.io": "^2.0.3"
+    },
+    "devDependencies": {
+        "@types/express": "^4.0.37",
+        "@types/socket.io": "^1.4.30",
+        "gulp": "^3.9.1",
+        "gulp-nodemon": "^2.2.1",
+        "gulp-sourcemaps": "^2.6.1",
+        "gulp-tslint": "^8.1.2",
+        "gulp-typescript": "^3.2.1",
+        "tslint": "^5.6.0",
+        "typescript": "^2.4.2"
+    }
+}

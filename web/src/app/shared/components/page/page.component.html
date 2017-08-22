@@ -1,0 +1,10 @@
+<md-toolbar color="primary">
+    <md-icon *ngIf="!disableMenu" (click)="openMenu()" fxShow fxHide.gt-sm>menu</md-icon>
+    <ng-content select="[treehouse-header]"></ng-content>
+</md-toolbar>
+
+<div class="page-content">
+    <ng-content></ng-content>
+</div>
+
+<ng-content select="[treehouse-footer]"></ng-content>

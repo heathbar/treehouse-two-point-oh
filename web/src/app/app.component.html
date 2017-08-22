@@ -1,0 +1,26 @@
+<md-sidenav-container>
+    <md-sidenav #sidenav [mode]="navMode" [opened]="navOpen" (close)="navOpen=false">
+        <md-toolbar color="primary" fxLayout="column">
+           <span>Treehouse</span>
+        </md-toolbar>
+        <md-nav-list>
+            <a md-list-item (click)="navigate('/')">
+                <md-icon>dashboard</md-icon>
+                Dashboard
+            </a>
+            <a md-list-item (click)="navigate('/automations')">
+                <md-icon>group_work</md-icon>
+                Automation
+            </a>
+            <a md-list-item (click)="navigate('/configuration')">
+                <md-icon>settings</md-icon>
+                Configuration
+            </a>
+            <a md-list-item (click)="navigate('/reports')">
+                <md-icon>assessment</md-icon>
+                Reports
+            </a>
+        </md-nav-list>
+    </md-sidenav>
+    <router-outlet></router-outlet>
+</md-sidenav-container>

@@ -1,0 +1,16 @@
+md-icon {
+    margin-right: 16px;
+}
+
+.mat-sidenav {
+    background-color: #212121;
+    width: 230px;   
+
+    & .mat-nav-list .mat-list-item {
+        color: rgba(255,255,255,.87);
+
+        & .spacer {
+            flex: 1 1 auto;
+        }
+    }
+}

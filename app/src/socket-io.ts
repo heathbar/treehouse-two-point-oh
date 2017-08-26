@@ -10,6 +10,10 @@ export class SocketIO {
 
         io.on('connection', (socket: SocketIO.Socket) => {
             socket.emit('event', `Congratulations, you've connected.`);
+
+            socket.on('action', (action) => {
+                console.log('action: ', action);
+            });
         });
     }
 }

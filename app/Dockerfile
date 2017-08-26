@@ -10,4 +10,4 @@ RUN npm install && npm run compile
 
 EXPOSE 3001
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "develop"]

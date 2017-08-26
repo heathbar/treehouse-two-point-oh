@@ -11,6 +11,7 @@ import { ConfigModule } from "./config/config.module";
 import 'hammerjs';
 import 'rxjs/add/observable/combineLatest';
 import 'rxjs/add/operator/take';
+import 'rxjs/add/operator/map';
 
 @NgModule({
     declarations: [

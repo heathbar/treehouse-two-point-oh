@@ -1,3 +1,4 @@
+import { AppService } from './shared/services/app.service';
 import { NavService } from './shared/services/nav.service';
 import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -25,6 +26,7 @@ import 'rxjs/add/operator/map';
         ConfigModule
     ],
     providers: [
+        AppService,
         NavService
     ],
     bootstrap: [AppComponent]

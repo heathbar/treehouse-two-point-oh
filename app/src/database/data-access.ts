@@ -6,7 +6,9 @@ export class DataAccess {
         DataAccess.connect();
     }
 
-    static connect(): any {
-        return connect('mongodb://database:27017/treehouse', { useMongoClient: true });
+    static connect(): Promise<void> {
+        return new Promise((resolve, reject) => {
+            connect('mongodb://database:27017/treehouse', { useMongoClient: true }).then(resolve).catch(reject);
+        });
     }
 }

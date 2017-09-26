@@ -1,5 +1,5 @@
 import { DataAccess } from '../data-access';
-import { AgentInterface } from '../model/agent.interface';
+import { Agent } from '../model/agent.interface';
 import { Schema, Model, model} from 'mongoose';
 import { AgentModel } from '../model/agent.model';
 
@@ -14,4 +14,4 @@ const schema: Schema = new Schema({
     }
 });
 
-export const AgentSchema: Model<AgentInterface> = model<AgentInterface>('Agents', schema);
+export const AgentSchema: Model<Agent> = model<Agent>('Agents', schema);

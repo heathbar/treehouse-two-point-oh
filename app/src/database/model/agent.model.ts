@@ -1,10 +1,10 @@
-import { AgentInterface } from './agent.interface';
+import { Agent } from './agent.interface';
 
 export class AgentModel {
 
-    private agent: AgentInterface;
+    private agent: Agent;
 
-    constructor(agent: AgentInterface) {
+    constructor(agent: Agent) {
         this.agent = agent;
     }
 

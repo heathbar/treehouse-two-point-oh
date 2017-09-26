@@ -1,6 +1,6 @@
 import { Document } from 'mongoose';
 
-export interface AgentInterface extends Document {
+export interface Agent extends Document {
     name: string;
     active: boolean;
 }

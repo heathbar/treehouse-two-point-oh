@@ -1,6 +1,6 @@
 import { Messenger } from './messenger';
 import { SocketIO } from './socket-io';
-import { AgentInterface } from './database/model/agent.interface';
+import { Agent } from './database/model/agent.interface';
 import { AgentModel } from './database/model/agent.model';
 import { AgentRepository } from './database/repository/agent.repository';
 import * as mongoose from 'mongoose';
@@ -22,12 +22,12 @@ repo.retrieve((erro: any, res: AgentModel[]) => {
 });
 
 function populateTheDb() {
-    const a: AgentInterface = {
+    const a: Agent = {
         name: 'MQTT',
         active: true
     } as any;
 
-    const b: AgentInterface = {
+    const b: Agent = {
         name: 'Wemo',
         active: false
     } as any;
